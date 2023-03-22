@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://kit.fontawesome.com/aba2c4b3e3.js" crossorigin="anonymous"></script>
-    <title>Teilor Advocacia</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Teilor Advocacia | Advocacia em Curitiba</title>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <div class="header_primario">
+        <div class="contatos_header">
+            <a href="https://api.whatsapp.com/send?phone=5541995564466&text=Ol%C3%A1!%20Seja%20muito%20bem%20vindo(a)%20%C3%A0%20Teilor%20Advocacia!%0AComo%20podemos%20ajudar?" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>(41) 99556-4466</span>
+            </a>
+            
+        </div>
+    </div>
     <header class="cabecalho">
         <nav class="navegacao">
             <div class="imgLogo">
@@ -18,15 +31,15 @@
             </div>
             <div class="navLinks">
                 <a class="navigation" href="index.html" class="cabecalho__menu__link">Home</a>
-                <a class="navigation" href="quemSomos.html" class="cabecalho__menu__link">Quem somos</a>
-                <a class="navigation" href="areasAtuacao.html" class="cabecalho__menu__link">Áreas de atuação</a>
-                <a class="navigation" href="equipe.html" class="cabecalho__menu__link">Equipe</a>
-                <a class="navigation" href="contato.html" class="cabecalho__menu__link">Contato</a>
+                <a class="navigation" href="quemsomos.html" class="cabecalho__menu__link">Quem somos</a>
+                <a class="navigation" href="#areasatuacao" class="cabecalho__menu__link">Áreas de atuação</a>
+                <a class="navigation" href="#equipe" class="cabecalho__menu__link">Equipe</a>
+                <a class="navigation" href="#contato" class="cabecalho__menu__link">Contato</a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="apresentacao">
+        <section class="apresentacao" >
             <div class="apresentacaoTexto">
                 <h1>
                    Bem vindo(a) à Teilor Advocacia
@@ -53,40 +66,38 @@
             <h2 class="titulo2">CONHEÇA NOSSA EQUIPE DE PROFISSIONAIS</h2>
             <div class="card-container">                
                     <div class="card-foto">
-                        <img src="/assets/images/Gerson.jpg" width="250" height="250" alt="">
+                        <img class="imgEquipe" src="/assets/images/Gerson.jpg" alt="GersonTeilor">
                     </div>
                 <div class="card-text">
                         <h3 class="nome">Gerson Teilor</h3>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non veniam ipsa nemo laborum fuga distinctio dolorum perferendis iste omnis repellendus aliquid eius expedita provident quis vitae, facilis ea et alias?
-                     
                 </div>
             </div>
-            <div class="card-container">
+            <div class="card-container" id="card-container2">
                 
                 <div class="card-text">
-                    <h3 class="nome">Vanessa Teilor</h3>
+                    <h3 class="nome2">Vanessa Teilor</h3>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non veniam ipsa nemo laborum fuga distinctio dolorum perferendis iste omnis repellendus aliquid eius expedita provident quis vitae, facilis ea et alias?
                         
                 </div>
                 <div class="card-foto">
-                    <img src="/assets/images/vanessa.jpg" width="250" height="250" alt="">
+                    <img class="imgEquipe"  src="/assets/images/vanessa.jpg" alt="VanessaTeilor">
                 </div>
             </div>
             <div class="card-container">
                 <div class="card-foto">
-                    <img src="/assets/images/Larissa.jpg" width="250" height="250" alt="">
+                    <img class="imgEquipe"  src="/assets/images/Larissa.jpg" alt="LarissaTeilor">
                 </div>
                 <div class="card-text">
                     <h3 class="nome">Larissa Teilor</h3>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non veniam ipsa nemo laborum fuga distinctio dolorum perferendis iste omnis repellendus aliquid eius expedita provident quis vitae, facilis ea et alias?
-                     
                 </div>
             </div>
 
         </section>
         <section class="localizacao">
             <div class="localizacaoMapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.4142733155963!2d-49.24224628498674!3d-25.39093988380643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce586108bf9f3%3A0x880c88df88640c0e!2sTeilor%20Advocacia!5e0!3m2!1spt-BR!2sbr!4v1679244492743!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.4142733155963!2d-49.24224628498674!3d-25.39093988380643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce586108bf9f3%3A0x880c88df88640c0e!2sTeilor%20Advocacia!5e0!3m2!1spt-BR!2sbr!4v1679244492743!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="informacoes">
                 <div class="endereco">
@@ -129,15 +140,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
             </div>
         </section>
     </main>
     <footer>
-        <div class="infos">
-
-        </div>
+        <nav class="footer_nav">
+          <p class="footer_p">&copy; 2023 Todos os direitos reservados.</p>
+          <p class="footer_p">Desenvolvido por: <a href="https://www.linkedin.com/in/amandacamargo21/" target="_blank"><strong>Amanda Camargo - Consultoria e Criação de Sites</strong></a></p>
     </footer>
+    <script src="/js/functions.js"></script>
 </body>
 </html>

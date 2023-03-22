@@ -17,21 +17,28 @@
     font-weight: 400;
   }
 
+  .header_primario {
+    background-color: #220000;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
   .cabecalho {
-    padding: 0 0 0 10%;
     background-color: #591C1C;
   }
 
   .navegacao {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-around;
   }
 
   .navLinks {
-    right: 5%;
-    position: absolute;
+    /* right: 5%;
+    position: absolute; */
    
   }
 
@@ -52,19 +59,20 @@
   }
 
   main {
-    background-image: linear-gradient(to right bottom, rgb(24 28 28 / 50%), rgb(6 4 4 / 80%)), url(/assets/images/still-life-with-scales-justice.jpg);
+
     color: #f6f6f6;
     box-sizing: border-box;
     background-size: cover;
-    height: 100vh;
   }
 
   .apresentacao {
+    background-image: linear-gradient(to right bottom, rgb(24 28 28 / 0%), rgb(6 4 4 / 80%)), url(/assets/images/still-life-with-scales-justice.jpg);;
     box-sizing: border-box;
     padding: 15% 15%;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
+    background-size: cover;
   }
   
   .apresentacaoTexto {
@@ -78,10 +86,6 @@
   .areasAtuacao {
     padding: 80px 0 80px 0;
     background-color: #6F3232;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
   }
 
   .cards {
@@ -106,11 +110,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
+    letter-spacing: 1px;
+  
   }
 
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .imgEquipe {
+    width: 250px;
+    height: 260px;
   }
 
   .container {
@@ -159,6 +169,8 @@
   iframe {
     box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.26);
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .informacoes {
@@ -240,4 +252,128 @@
   font-size: 24px;
   line-height: 45px;
   font-weight: 300;
+}
+
+.nome2 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  line-height: 45px;
+  font-weight: 300;
+}
+
+
+
+footer {
+  background-color: #220000;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+#myBtn {
+  display: none; 
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;
+  border: none; 
+  outline: none; 
+  background-color: rgb(26, 24, 24); 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+  transition: 0.2s ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+.localizacaoMapa {
+  width: 600px;
+  height: 450px;
+}
+
+@media  screen and (max-width: 1100px) {
+
+.navegacao {
+  flex-direction: column;
+}
+
+.navLinks {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+  margin: 10px;
+}
+
+.cards {
+  flex-direction: column;
+}
+
+.card {
+  width: 80%;
+}
+
+.card-container {
+  flex-direction: column;
+
+}
+
+.localizacao {
+  padding: 5%;
+  flex-direction: column;
+}
+
+.localizacaoMapa {
+  width: 90%;
+}
+
+.iframe {
+  width: 90%;
+}
+
+.apresentacao {
+  background-repeat: round;
+}
+
+#card-container2 {
+  flex-direction: column-reverse;
+}
+
+.nome2 {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nome {
+  text-align: center;
+}
 }
